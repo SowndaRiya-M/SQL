@@ -1,0 +1,26 @@
+use world;
+select * from city;
+select * from countrylanguage;
+select * from country;
+select countrycode,Percentage from countrylanguage where countrycode like 'a__' and Percentage>90;
+select population,sum(population) as 'world population' from country;
+select code,Name,Population,indepyear from country where ( population>100000000 and  IndepYear between 1920 and 1947);
+select name,population,IndepYear from country where not (population>10000000 and indepyear between 1920 and 1950);
+select Name,indepyear from country where indepyear is null;
+select * from country where Name in('india','north america','korea','australia','afghanistan');
+select name from country where population not in('18886000');
+select name,surfacearea,Population from country order by surfacearea desc limit 6,3;
+select code,name,countrylanguage.CountryCode from country join countrylanguage on countrylanguage.CountryCode=country.Code;
+select c.name,ci.population,cl.CountryCode from country c join countrylanguage cl on c.code=cl.CountryCode join city ci on c.population=ci.population;
+select c.name,p.note_id from country c join store.order_item_notes p on c.name=p.note_id;
+update country set code='INDI' where 'name'='india';
+select code,name from country;
+select count(name) as 'total countries' from country;
+local load infile 'C:\Users\sowndariya\Desktop\test.txt' into riya.riya1 fields terminated by ',';
+use world;
+select * from country order by Population desc limit 2;
+
+create table riyaaa(name varchar(6));
+insert into riyaaa values('riyara');
+drop table riyaaa;
+select * from riyaaa;

@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+PRODID:-//WebinarJam/WebinarJam//EN
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+UID:cNgqJxKKtQ71xjO
+SUMMARY:How to Land Your First Job in Data Science
+DESCRIPTION:Webinar: How to Land Your First Job in Data Science\nDescription: How to Land Your First Job in Data Science, Even if You Have No Experience and No Network\nHost(s): Kyle McKiou\nWebinar link: https://event.webinarjam.com/go/live/1/yl3x4hqt8f9nqxum89w
+DTSTAMP:20200914T043000Z
+DTSTART:20200914T043000Z
+DTEND:20200914T053000Z
+END:VEVENT
+END:VCALENDAR
